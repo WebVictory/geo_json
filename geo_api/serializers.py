@@ -46,35 +46,4 @@ class UploadSerializer(Serializer):
     class Meta:
         fields = ['file_uploaded','name','geom_type']
 
-#
-#     """ A class to serialize locations as GeoJSON compatible data """
-#
-#     class Meta:
-#         # model = School
-#         # geo_field = 'location'
-#         # auto_bbox = True
-        #
-        # you can also explicitly declare which fields you want to include
-        # as with a ModelSerializer.
-        # fields = ('id', 'name', 'county', 'enrollment', 'location', 'electricity_availability', 'emmis_code')
-
-
-# from drf_extra_fields.geo_fields import PointField
-#
-# class PointSerializer(serializers.ModelSerializer):
-#     geometry = PointField()
-#
-#     class Meta:
-#         model = Point
-#         fields = ('geometry')
-
-# class PointSerializer(GeoFeatureModelSerializer):
-#
-#     class Meta:
-#         model = Point
-#         fields = ('geometry')
-#         id_field = False
-#         # fields = settings.FEATURE_FIELDS_TO_SERIALIZE
-#         geo_field = "geometry"
-
 
